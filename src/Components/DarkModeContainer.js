@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { NavLink, Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon } from "@fortawesome/free-solid-svg-icons";
+import React from 'react';
+import styled from 'styled-components';
+import { NavLink, Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon } from '@fortawesome/free-solid-svg-icons';
 
 const DarkModeContainer = () => {
   return (
@@ -27,7 +27,7 @@ const DarkModeContainerStyled = styled.div`
   height: auto;
   padding: 15px 25px;
   h2 {
-    font-family: "Pacifico", cursive;
+    font-family: 'Pacifico', cursive;
     color: var(--light-white);
   }
   svg {

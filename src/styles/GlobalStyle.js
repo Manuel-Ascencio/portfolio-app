@@ -1,12 +1,12 @@
-import { createGlobalStyle } from "styled-components";
-import styled from "styled-components";
+import { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 
     :root{
         --background-main: #0a192f;
         --white-color: #FFF;
-        --dodger-blue: #00BFFF	;
+        --dodger-blue: #00BFFF;
         --cyan-blue: #92abcf;
         --nav-background: RGB(5.88, 9.02, 14.2, 0.5);
         --light-white: #ccd6f6;

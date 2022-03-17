@@ -1,8 +1,8 @@
-import { NavMenu } from "./Components";
-import { DarkModeContainer } from "./Components";
-import styled from "styled-components";
-import { Home, About, Projects, Contact } from "./Pages";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { NavMenu } from './Components';
+import { DarkModeContainer } from './Components';
+import styled from 'styled-components';
+import { Home, About, Projects } from './Pages';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -15,7 +15,6 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/projects" element={<Projects />} />
-            <Route exact path="/contact" element={<Contact />} />
           </Routes>
         </MainContainerStyled>
       </div>

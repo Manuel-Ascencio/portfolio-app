@@ -1,14 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import { NavLink, Link } from "react-router-dom";
-import picture from "../images/picture.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import styled from 'styled-components';
+import { NavLink, Link } from 'react-router-dom';
+import picture from '../images/picture.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faHouseUser,
   faUser,
   faFolderOpen,
-  faComments,
-} from "@fortawesome/free-solid-svg-icons";
+  faComments
+} from '@fortawesome/free-solid-svg-icons';
 
 const Navigation = () => {
   return (
