@@ -1,36 +1,41 @@
-import React from 'react';
-import styled from 'styled-components';
-import { NavLink, Link } from 'react-router-dom';
-import picture from '../images/picture.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouseUser,
   faUser,
   faFolderOpen,
-  faComments
-} from '@fortawesome/free-solid-svg-icons';
+} from "@fortawesome/free-solid-svg-icons";
 
 const Navigation = () => {
   return (
     <NavigationStyled>
-      <div className="picture-container">
-        {/* <img src={picture} alt=""/> */}
-      </div>
+      <div className="picture-container"></div>
       <ul className="nav-items">
         <li className="nav-item">
-          <NavLink to="/" className="active">
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             <FontAwesomeIcon icon={faHouseUser} />
             <span>Home</span>
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/about" className="active">
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             <FontAwesomeIcon icon={faUser} />
             <span>About</span>
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/projects" className="active">
+          <NavLink
+            to="/projects"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             <FontAwesomeIcon icon={faFolderOpen} />
             <span>Projects</span>
           </NavLink>
@@ -55,13 +60,19 @@ const NavigationStyled = styled.nav`
   z-index: 100;
   bottom: 0;
 
+  .active {
+    border-top: 3px solid ${({ theme }) => theme.colors.color3};
+  }
+
   .nav-items {
     display: flex;
     justify-content: space-around;
     a {
+      color: ${({ theme }) => theme.colors.color2};
       svg {
         width: 100%;
         margin: auto;
+        color: ${({ theme }) => theme.colors.color2};
       }
     }
     span {

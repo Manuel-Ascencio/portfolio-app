@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Title = ({ title }) => {
   return (
@@ -11,7 +11,7 @@ const Title = ({ title }) => {
 
 const TitleStyled = styled.div`
   h3 {
-    color: var(--light-white);
+    color: ${({ theme }) => theme.colors.color1};
     font-size: 1.3rem;
     letter-spacing: 0.1rem;
   }

@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Footer = () => {
   return (
@@ -19,8 +19,8 @@ const FooterStyled = styled.div`
   text-align: center;
   p {
     text-align: center;
-    color: var(--cyan-blue);
-    border-top: 1px solid var(--cyan-blue);
+    color: ${({ theme }) => theme.colors.color2};
+    border-top: 1px solid ${({ theme }) => theme.colors.color2};
     font-size: 1rem;
     opacity: 0.7;
     span {

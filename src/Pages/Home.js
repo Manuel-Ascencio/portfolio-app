@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { AnimatedPage, Footer } from '../Components';
-import linkedin from '../images/icons/linkedin.svg';
-import github from '../images/icons/github.svg';
+import React from "react";
+import styled from "styled-components";
+import { AnimatedPage, Footer } from "../Components";
+import linkedin from "../images/icons/linkedin.svg";
+import github from "../images/icons/github.svg";
 
 const Home = () => {
   return (
@@ -41,22 +41,25 @@ const HomeStyled = styled.section`
   width: 100%;
   overflow: hidden;
   .presentation {
-    padding: 90px 25px 0 25px;
-    min-height: 80vh;
+    padding: 10px 25px 0 25px;
+    min-height: 100vh;
     h3 {
-      color: var(--dodger-blue);
-      font-family: 'Roboto Mono', monospace;
+      // color: var(--dodger-blue);
+      color: ${({ theme }) => theme.colors.color3};
+      font-family: "Roboto Mono", monospace;
     }
     h2 {
       font-size: 1.8rem;
-      color: var(--light-white);
+      // color: var(--light-white);
+      color: ${({ theme }) => theme.colors.color1};
       font-weight: bold;
       // font-family: "Roboto Mono", monospace;
       letter-spacing: 0.2rem;
     }
     p {
       margin-top: 20px;
-      color: var(--cyan-blue);
+      // color: var(--cyan-blue);
+      color: ${({ theme }) => theme.colors.color2};
       font-size: 1.8rem;
       font-weight: bold;
       letter-spacing: 0.1rem;
@@ -73,7 +76,8 @@ const HomeStyled = styled.section`
       a {
         display: flex;
         margin-right: 20px;
-        color: var(--light-white);
+        // color: var(--light-white);
+        color: ${({ theme }) => theme.colors.color1};
         border-bottom: 1px solid var(--dodger-blue);
         img {
           margin: 0 3px;

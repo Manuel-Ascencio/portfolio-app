@@ -1,18 +1,20 @@
-import React from 'react';
-import styled from 'styled-components';
-import { AnimatedPage, PageHeader, Footer, Title } from '../Components';
-import picture from '../images/picture.png';
-import html from '../images/icons/html.svg';
-import css from '../images/icons/css.svg';
-import JavaScript from '../images/icons/javascript.svg';
-import react from '../images/icons/react.svg';
-import nodeJS from '../images/icons/nodeJS.svg';
+import React from "react";
+import styled from "styled-components";
+import { AnimatedPage, PageHeader, Footer, Title } from "../Components";
+import html from "../images/icons/html.svg";
+import css from "../images/icons/css.svg";
+import JavaScript from "../images/icons/javascript.svg";
+import react from "../images/icons/react.svg";
+import nodeJS from "../images/icons/nodeJS.svg";
+import email from "../images/icons/email.svg";
+import linked from "../images/icons/linked.svg";
+import githb from "../images/icons/githb.svg";
 
 const About = () => {
   return (
     <AboutStyled>
       <AnimatedPage>
-        <PageHeader title={'About Me'} />
+        <PageHeader title={"About Me"} />
         <div className="about-section">
           <div className="about-me">
             <p>
@@ -22,7 +24,7 @@ const About = () => {
             </p>
           </div>
           <div className="autobiography-container">
-            <Title title={'Autobiography'} />
+            <Title title={"Autobiography"} />
             <ul>
               <li>
                 <span>2000</span>
@@ -43,7 +45,7 @@ const About = () => {
             </ul>
           </div>
           <div className="technologies-container">
-            <Title title={'Learned technologies'} />
+            <Title title={"Learned technologies"} />
             <ul className="technologies">
               <li>
                 <img src={html} width="40px" />
@@ -68,8 +70,32 @@ const About = () => {
             </ul>
           </div>
           <div className="contact-container">
-            <Title title={'Contact'} />
+            <Title title={"Contact"} />
             <h4>You can contact me by the following means.</h4>
+            <div>
+              <img src={email} />
+              <p>Email: </p>
+              <a href="mailto:manuelascencioprz@gmail.com" target="_blank">
+                @jesusmanuel
+              </a>
+            </div>
+            <div>
+              <img src={linked} />
+              <p>LinkedIn: </p>
+              <a
+                href="https://www.linkedin.com/in/jesus-manuel-ascencio-perez-700373227/"
+                target="_blank"
+              >
+                @jesusmanuel
+              </a>
+            </div>
+            <div>
+              <img src={githb} />
+              <p>GitHub: </p>
+              <a href="https://github.com/Manuel-Ascencio" target="_blank">
+                @jesusmanuel
+              </a>
+            </div>
           </div>
         </div>
         <Footer></Footer>
@@ -80,33 +106,34 @@ const About = () => {
 
 const AboutStyled = styled.section`
   width: 100%;
-  padding: 90px 25px 0 25px;
+  padding: 10px 25px 0 25px;
   overflow: hidden;
   .about-me{
-    margin: 20px 0 20px 0;
+    margin: 10px 0 20px 0;
     p{
-      color: var(--cyan-blue);
+      // color: var(--cyan-blue);
+      color: ${({ theme }) => theme.colors.color2};
       line-height: 1.3rem;
       letter-spacing: .1rem;
     }
   } 
   .autobiography-container{
     ul{
-      margin: 20px 0 20px 0;
+      margin: 10px 0 20px 0;
       li{
         margin-bottom: 10px;
         span{
-          color: var(--dodger-blue);
+          color: ${({ theme }) => theme.colors.color3};
         }
         p{
-          color: var(--cyan-blue);
+          color: ${({ theme }) => theme.colors.color2};
         }
       }
     }
   }
   .technologies-container{
     ul{
-      margin: 20px 0 20px 0;
+      margin: 10px 0 20px 0;
       text-align: center;
       display: flex;
       flex-wrap: wrap;
@@ -114,14 +141,35 @@ const AboutStyled = styled.section`
         width: 100px;
         margin: 3px;
         p{
-          color: var(--cyan-blue);
+          color: ${({ theme }) => theme.colors.color2};
         }
       }
     }
   }
   .contact-container{
+    margin-bottom: 50px;
     h4{
-      color: var(--cyan-blue);
+      color: ${({ theme }) => theme.colors.color2};
+      font-size: 1rem;
+      margin: 10px 0 20px 0;
+    }
+    div{
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      img{
+        width: 30px;
+        margin-right: 5px;
+      }
+      p{
+        color: ${({ theme }) => theme.colors.color1};
+        margin-right: 5px;
+      }
+      a{
+        color: ${({ theme }) => theme.colors.color1};
+        border-bottom: 1px solid var(--dodger-blue);
+        
+      }
     }
   }
   .
