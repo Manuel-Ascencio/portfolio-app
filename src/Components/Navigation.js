@@ -11,7 +11,6 @@ import {
 const Navigation = () => {
   return (
     <NavigationStyled>
-      <div className="picture-container"></div>
       <ul className="nav-items">
         <li className="nav-item">
           <NavLink
@@ -51,6 +50,7 @@ const Navigation = () => {
 };
 
 const NavigationStyled = styled.nav`
+  // position: absolute;
   width: 100%;
   height: auto;
   padding: 10px;
@@ -59,29 +59,62 @@ const NavigationStyled = styled.nav`
   position: fixed;
   z-index: 100;
   bottom: 0;
+  left: 0;
 
-  .active {
-    border-top: 3px solid ${({ theme }) => theme.colors.color3};
+  .nav-items {
+    li {
+      .active {
+        svg {
+          border-top: 3px solid ${({ theme }) => theme.colors.color3};
+          color: ${({ theme }) => theme.colors.color3};
+        }
+        span {
+          color: ${({ theme }) => theme.colors.color3};
+        }
+      }
+    }
   }
 
   .nav-items {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     a {
       color: ${({ theme }) => theme.colors.color2};
       svg {
         width: 100%;
         margin: auto;
+        padding-top: 5px;
         color: ${({ theme }) => theme.colors.color2};
       }
     }
     span {
-      display: block;
+      // display: inline-block;
     }
   }
   footer {
     p {
       display: none;
+    }
+  }
+  @media only screen and (min-width: 650px) {
+    position: relative;
+    .nav-items {
+      // width: 300px;
+      display: flex;
+      justify-content: end;
+      a {
+        color: ${({ theme }) => theme.colors.color2};
+        margin-right: 50px;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        svg {
+          display: none;
+        }
+        span {
+          font-size: 1.2rem;
+        }
+      }
     }
   }
 `;

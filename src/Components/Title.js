@@ -15,6 +15,11 @@ const TitleStyled = styled.div`
     font-size: 1.3rem;
     letter-spacing: 0.1rem;
   }
+  @media only screen and (min-width: 650px) {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 export default Title;

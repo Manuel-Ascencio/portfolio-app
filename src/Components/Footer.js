@@ -27,6 +27,11 @@ const FooterStyled = styled.div`
       font-weight: bold;
     }
   }
+  @media only screen and (min-width: 650px) {
+    max-width: 950px;
+    margin: auto;
+    padding: 0 25px 30px 25px;
+  }
 `;
 
 export default Footer;

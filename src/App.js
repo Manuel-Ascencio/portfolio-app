@@ -1,6 +1,5 @@
 import React from "react";
-import { NavMenu } from "./Components";
-import { Logo, Button } from "./Components";
+import { Logo, Button, Navigation } from "./Components";
 import styled from "styled-components";
 import { Home, About, Projects } from "./Pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -33,9 +32,13 @@ function App() {
     <BrowserRouter>
       <ThemeProvider theme={themes[theme]}>
         <div className="App">
-          <Logo />
-          <Button theme={theme} handleClick={toggleTheme} />
-          <NavMenu />
+          <MainHeader>
+            <Container>
+              <Logo />
+              <Navigation />
+              <Button theme={theme} handleClick={toggleTheme} />
+            </Container>
+          </MainHeader>
           <MainContainerStyled>
             <Routes>
               <Route exact path="/" element={<Home />} />
@@ -53,5 +56,22 @@ const MainContainerStyled = styled.main`
   width: 100%;
   min-height: 100vh;
   background-color: ${({ theme }) => theme.colors.background};
+`;
+
+const MainHeader = styled.header`
+  width: 100%;
+  background-color: ${({ theme }) => theme.colors.background};
+`;
+
+const Container = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media only screen and (min-width: 650px) {
+    max-width: 950px;
+    margin: auto;
+    padding: 10px 0;
+  }
 `;
 export default App;

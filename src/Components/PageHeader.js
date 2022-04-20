@@ -16,6 +16,11 @@ const PageHeaderStyled = styled.div`
     display: inline;
     font-weight: bold;
   }
+  @media only screen and (min-width: 650px) {
+    h2 {
+      font-size: 2.2rem;
+    }
+  }
 `;
 
 export default PageHeader;

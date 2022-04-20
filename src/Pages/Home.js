@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <HomeStyled>
       <AnimatedPage>
-        <div className="presentation">
+        <MainContainerStyled>
           <h3>Hi, my name is</h3>
           <h2>Jesus Manuel.</h2>
           <p>I build things for the web.</p>
@@ -30,7 +30,7 @@ const Home = () => {
               GitHub
             </a>
           </div>
-        </div>
+        </MainContainerStyled>
         <Footer></Footer>
       </AnimatedPage>
     </HomeStyled>
@@ -40,48 +40,68 @@ const Home = () => {
 const HomeStyled = styled.section`
   width: 100%;
   overflow: hidden;
-  .presentation {
-    padding: 10px 25px 0 25px;
-    min-height: 100vh;
+`;
+
+const MainContainerStyled = styled.div`
+  padding: 10px 25px 0 25px;
+  min-height: 100vh;
+  h3 {
+    color: ${({ theme }) => theme.colors.color3};
+    font-family: "Roboto Mono", monospace;
+  }
+  h2 {
+    font-size: 1.8rem;
+    color: ${({ theme }) => theme.colors.color1};
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+  }
+  p {
+    margin-top: 20px;
+    // color: var(--cyan-blue);
+    color: ${({ theme }) => theme.colors.color2};
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    line-height: 1.8rem;
+  }
+  div p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: normal;
+  }
+  .social-media {
+    display: flex;
+    margin-top: 20px;
+    a {
+      display: flex;
+      margin-right: 20px;
+      color: ${({ theme }) => theme.colors.color1};
+      border-bottom: 1px solid var(--dodger-blue);
+      img {
+        margin: 0 3px;
+      }
+    }
+  }
+  @media only screen and (min-width: 650px) {
+    max-width: 950px;
+    margin: auto;
+    margin-top: 50px;
     h3 {
-      // color: var(--dodger-blue);
-      color: ${({ theme }) => theme.colors.color3};
-      font-family: "Roboto Mono", monospace;
+      font-size: 1.2rem;
     }
     h2 {
-      font-size: 1.8rem;
-      // color: var(--light-white);
-      color: ${({ theme }) => theme.colors.color1};
-      font-weight: bold;
-      // font-family: "Roboto Mono", monospace;
-      letter-spacing: 0.2rem;
+      font-size: 2.3rem;
     }
     p {
-      margin-top: 20px;
-      // color: var(--cyan-blue);
-      color: ${({ theme }) => theme.colors.color2};
-      font-size: 1.8rem;
-      font-weight: bold;
-      letter-spacing: 0.1rem;
-      line-height: 1.8rem;
+      font-size: 2.3rem;
     }
     div p {
-      font-size: 1rem;
-      line-height: 1.2rem;
-      font-weight: normal;
+      font-size: 1.3rem;
     }
     .social-media {
-      display: flex;
-      margin-top: 20px;
+      margin-top: 50px;
       a {
-        display: flex;
-        margin-right: 20px;
-        // color: var(--light-white);
-        color: ${({ theme }) => theme.colors.color1};
-        border-bottom: 1px solid var(--dodger-blue);
-        img {
-          margin: 0 3px;
-        }
+        font-size: 1.2rem;
       }
     }
   }

@@ -17,9 +17,13 @@ const LogoStyled = styled.div`
   backdrop-filter: blur(10px);
   padding: 25px;
   h2 {
-    display: inline;
     font-family: "Pacifico", cursive;
     color: ${({ theme }) => theme.colors.color1};
+  }
+  @media only screen and (min-width: 650px) {
+    h2 {
+      font-size: 1.3rem;
+    }
   }
 `;
 

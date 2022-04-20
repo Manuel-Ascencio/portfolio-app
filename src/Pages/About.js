@@ -14,8 +14,8 @@ const About = () => {
   return (
     <AboutStyled>
       <AnimatedPage>
-        <PageHeader title={"About Me"} />
-        <div className="about-section">
+        <ManinContainerStyled>
+          <PageHeader title={"About Me"} />
           <div className="about-me">
             <p>
               I'm Jesus Manuel, a self-taught person, I'm very passionate about
@@ -97,7 +97,7 @@ const About = () => {
               </a>
             </div>
           </div>
-        </div>
+        </ManinContainerStyled>
         <Footer></Footer>
       </AnimatedPage>
     </AboutStyled>
@@ -108,71 +108,113 @@ const AboutStyled = styled.section`
   width: 100%;
   padding: 10px 25px 0 25px;
   overflow: hidden;
-  .about-me{
+  .
+`;
+
+const ManinContainerStyled = styled.div`
+  .about-me {
     margin: 10px 0 20px 0;
-    p{
-      // color: var(--cyan-blue);
+    p {
       color: ${({ theme }) => theme.colors.color2};
       line-height: 1.3rem;
-      letter-spacing: .1rem;
+      letter-spacing: 0.1rem;
     }
-  } 
-  .autobiography-container{
-    ul{
+  }
+  .autobiography-container {
+    ul {
       margin: 10px 0 20px 0;
-      li{
+      li {
         margin-bottom: 10px;
-        span{
+        span {
           color: ${({ theme }) => theme.colors.color3};
         }
-        p{
+        p {
           color: ${({ theme }) => theme.colors.color2};
         }
       }
     }
   }
-  .technologies-container{
-    ul{
+  .technologies-container {
+    ul {
       margin: 10px 0 20px 0;
       text-align: center;
       display: flex;
       flex-wrap: wrap;
-      li{
+      li {
         width: 100px;
         margin: 3px;
-        p{
+        p {
           color: ${({ theme }) => theme.colors.color2};
         }
       }
     }
   }
-  .contact-container{
+  .contact-container {
     margin-bottom: 50px;
-    h4{
+    h4 {
       color: ${({ theme }) => theme.colors.color2};
       font-size: 1rem;
       margin: 10px 0 20px 0;
     }
-    div{
+    div {
       display: flex;
       align-items: center;
       margin-bottom: 10px;
-      img{
+      img {
         width: 30px;
         margin-right: 5px;
       }
-      p{
+      p {
         color: ${({ theme }) => theme.colors.color1};
         margin-right: 5px;
       }
-      a{
+      a {
         color: ${({ theme }) => theme.colors.color1};
         border-bottom: 1px solid var(--dodger-blue);
-        
       }
     }
   }
-  .
+  @media only screen and (min-width: 650px) {
+    max-width: 950px;
+    margin: auto;
+    padding: 10px 25px 0 25px;
+    margin-top: 20px;
+    .about-me {
+      p {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+      }
+    }
+    .autobiography-container {
+      ul {
+        li {
+          span {
+            font-size: 1.3rem;
+          }
+          p {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+    .contact-container {
+      h4 {
+        font-size: 1.2rem;
+      }
+      div {
+        img {
+          width: 35px;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+        a {
+          font-size: 1.3rem;
+          border-bottom: 1px solid ${({ theme }) => theme.colors.color2};
+        }
+      }
+    }
+  }
 `;
 
 export default About;
