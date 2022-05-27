@@ -57,7 +57,6 @@ const MainContainerStyled = styled.div`
   }
   p {
     margin-top: 20px;
-    // color: var(--cyan-blue);
     color: ${({ theme }) => theme.colors.color2};
     font-size: 1.8rem;
     font-weight: bold;
