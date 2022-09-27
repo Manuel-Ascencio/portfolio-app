@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         text-decoration: none;
         list-style: none;
-        font-family: 'Red Hat Display', sans-serif;
+        font-family: 'Prompt', sans-serif;
         font-size: 1.1rem;
     }
     a{

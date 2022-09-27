@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const ChangeTheme = () => {
+export const ChangeTheme = () => {
   const localTheme = window.localStorage.getItem("theme");
   const [theme, setTheme] = useState("default");
 
@@ -21,5 +21,3 @@ const ChangeTheme = () => {
 
   return [theme, toggleTheme];
 };
-
-export default ChangeTheme;

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Github user finder",
+    "description": "It is an application that provides information of a github user if you search for him by his username.",
+    "image": "projects/github-finder.png",
+    "url": "https://github-user-finder-guf.netlify.app/",
+    "codeUrl": "https://github.com/Manuel-Ascencio/Github-user-finder"
+  },
+  {
+    "name": "Password generator",
+    "description": "Project that generates random passwords with character options that the user can choose.",
+    "image": "projects/generator-password.png",
+    "url": "https://random-password-generator-click.netlify.app/",
+    "codeUrl": "https://github.com/Manuel-Ascencio/Password-generator"
+  },
+  {
+    "name": "To-Do List",
+    "description": "In this project the user can create and save a list of tasks, to save the tasks the localStorage of the browser is used.",
+    "image": "projects/todo-list.png",
+    "url": "https://tdo-list.netlify.app/",
+    "codeUrl": "https://github.com/Manuel-Ascencio/ToDo-List"
+  }
+]
