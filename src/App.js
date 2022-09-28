@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Home, About, Projects } from "./pages";
+import { Home, About, Projects } from "./Pages";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { themes } from "./themes/Themes";
