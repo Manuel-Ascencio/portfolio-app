@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { PageHeader } from "../../components";
+import { PageHeader } from "../../Components";
 import { AnimatedPage } from "../../animations/AnimatedPage";
 import {
   ProjectsContainer,

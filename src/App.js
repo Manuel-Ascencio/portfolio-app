@@ -6,8 +6,8 @@ import { ThemeProvider } from "styled-components";
 import { themes } from "./themes/Themes";
 import { ChangeTheme } from "./hooks/ChangeTheme";
 import { Main, MainContainerStyled } from "./styles/AppStyles";
-import Header from "./components/Header/Header";
-import { Footer } from "./components";
+import Header from "./Components/Header/Header";
+import { Footer } from "./Components";
 
 function App() {
   const [theme, toggleTheme] = ChangeTheme();
