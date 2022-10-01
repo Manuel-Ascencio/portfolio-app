@@ -1,7 +1,16 @@
 {
-  "name": "portfolio-app",
+  "name": "portfolio-jesusmanuel",
   "version": "0.1.0",
-  "private": false,
+  "description": "Web portfolio where you can find some of the projects I have done.",
+  "private": true,
+  "keywords": [
+    "portfolio",
+    "web portfolio",
+    "jesus manuel",
+    "portafolio web"
+  ],
+  "author": "jesus manuel",
+  "main": "App.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
