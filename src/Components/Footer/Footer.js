@@ -29,7 +29,7 @@ const Footer = () => {
           <Text>GitHub</Text>
         </Link>
         <Link
-          href="mailto:manuelascencioprz@gmail.com"
+          href="mailto:info@jesusmanuelascencio.com"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -37,9 +37,7 @@ const Footer = () => {
           <MdEmail />
         </Link>
       </SocialMedias>
-      <Copyright>
-        Developed by Jesus Manuel
-      </Copyright>
+      <Copyright>Developed by Jesus Manuel</Copyright>
       <Copyright>with React.js</Copyright>
     </FooterContainer>
   );

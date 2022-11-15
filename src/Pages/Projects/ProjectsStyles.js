@@ -22,7 +22,7 @@ export const Item = styled.li`
   @media only screen and (min-width: 750px) {
     display: flex;
     margin-bottom: 100px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 `;
@@ -42,7 +42,7 @@ export const Image = styled.div`
   }
 
   @media only screen and (min-width: 750px) {
-    min-width: 60%;
+    max-width: 70%;
     height: 300px;
     border-radius: 5px;
   }
@@ -50,6 +50,7 @@ export const Image = styled.div`
 
 export const Info = styled.div`
   @media only screen and (min-width: 750px) {
+    max-width: 35%;
     order: ${({ index }) => (index % 2 === 0 ? "0" : "-1")};
     display: flex;
     flex-direction: column;
@@ -76,10 +77,16 @@ export const Description = styled.p`
   margin-top: 5px;
 
   @media only screen and (min-width: 750px) {
+    z-index: 10;
+    width: 125%;
     margin-top: 10px;
     font-size: 1rem;
     line-height: none;
     letter-spacing: 1px;
+    background-color: ${({ theme }) => theme.colors.background};
+    transition: background-color 0.3s linear;
+    border-radius: 5px;
+    padding: 20px 0;
     text-align: ${({ index }) => (index % 2 === 0 ? "end" : "start")};
   }
 `;

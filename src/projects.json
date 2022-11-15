@@ -19,5 +19,12 @@
     "image": "projects/todo-list.png",
     "url": "https://tdo-list.netlify.app/",
     "codeUrl": "https://github.com/Manuel-Ascencio/ToDo-List"
+  },
+  {
+    "name": "Pokedex",
+    "description": "App where you can find your favorite pokemons brought from the pokeapi.",
+    "image": "projects/pokedex-image.png",
+    "url": "https://jesus-manuel-pokedex.netlify.app/",
+    "codeUrl": "https://github.com/Manuel-Ascencio/pokedex-Academlo"
   }
 ]
