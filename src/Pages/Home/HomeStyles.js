@@ -52,3 +52,41 @@ export const Description = styled.p`
     font-size: 1.3rem;
   }
 `;
+
+export const Quote = styled.div`
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px;
+  border: 1px solid ${({ theme }) => theme.colors.color1};
+  border-radius: 5px;
+
+  svg {
+    font-size: 25px;
+    color: ${({ theme }) => theme.colors.color1};
+  }
+
+  @media only screen and (min-width: 650px) {
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    margin-top: 60px;
+  }
+`;
+
+export const Message = styled.p`
+  font-size: 1rem;
+  font-style: italic;
+  color: ${({ theme }) => theme.colors.color1};
+
+  @media only screen and (min-width: 650px) {
+    font-size: 1.1rem;
+  }
+`;
+
+export const Author = styled.span`
+  color: ${({ theme }) => theme.colors.color1};
+
+  @media only screen and (min-width: 650px) {
+    font-size: 1.1rem;
+  }
+`;

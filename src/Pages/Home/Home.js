@@ -1,4 +1,5 @@
 import React from "react";
+import { GoQuote } from "react-icons/go";
 
 import { AnimatedPage } from "../../animations/AnimatedPage";
 import {
@@ -8,6 +9,9 @@ import {
   Name,
   Title,
   Description,
+  Quote,
+  Message,
+  Author,
 } from "./HomeStyles";
 
 const Home = () => {
@@ -23,6 +27,14 @@ const Home = () => {
               I'm a web developer, passionate about technology and programming.
             </Description>
           </>
+          <Quote>
+            <GoQuote />
+            <Message>
+              Everything you do with effort and sacrifice, you will get it with
+              benefits. Do not give up!.
+            </Message>
+            <Author>-Abraham Calsin</Author>
+          </Quote>
         </MainContainer>
       </AnimatedPage>
     </HomeContainer>
