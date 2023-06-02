@@ -1,5 +1,12 @@
 [
   {
+    "name": "Clothing and shoe store",
+    "description": "Clothing store developed with React and styled components, connected to a backend developed with Node.js that allows user registration and processes their orders using Stripe.",
+    "image": "projects/clothing-and-shoe-store.png",
+    "url": "https://clothing-and-shoe-store.netlify.app/",
+    "codeUrl": "https://github.com/Manuel-Ascencio/clothing-and-shoe-store"
+  },
+  {
     "name": "Github user finder",
     "description": "It is an application that provides information of a github user if you search for him by his username.",
     "image": "projects/github-finder.png",
